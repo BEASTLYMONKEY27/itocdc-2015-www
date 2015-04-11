@@ -71,7 +71,7 @@
                 alert("Please enter password!");
                 return false;
             }
-            if(document.registration.confirm-password.value.length==0){
+            if(document.registration.confirm-password.value!=document.registration.password.value){
                 alert("Passwords do not match!");
                 return false;
             }
