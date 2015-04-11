@@ -75,6 +75,10 @@
                 alert("Passwords do not match!");
                 return false;
             }
+            if(document.registration.username.value.length==0){
+                alert("Please enter username!");
+                return false;
+            }
             return true;
          }
      </script>
@@ -92,7 +96,7 @@
        <input type="email" name="email"><br />
        <br />
        <label for="username">Username (display name)</label><br />
-       <input name="username"><br />
+       <input type="username" name="username"><br />
        <br />
        <label for="password">Password</label><br />
        <input name="password" type="password"><br />
