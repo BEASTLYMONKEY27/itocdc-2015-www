@@ -71,6 +71,10 @@
                 alert("Please enter password!");
                 return false;
             }
+            if(document.registration.password.value.length<6){
+                alert("Too short, 6 character minimum!");
+                return false;
+            }
             if(document.registration.confirm-password.value.length==0){
                 alert("Passwords do not match!");
                 return false;
